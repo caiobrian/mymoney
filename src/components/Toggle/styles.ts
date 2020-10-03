@@ -4,6 +4,7 @@ import Switch, { ReactSwitchProps } from "react-switch";
 export const Container = styled.div`
   display: flex;
   align-items: center;
+  margin-left: 15px;
 `;
 
 export const ToggleLabel = styled.span`
