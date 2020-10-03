@@ -9,6 +9,7 @@ export default createGlobalStyle`
 
   html, body, #root {
     height: 100%;
+    -webkit-font-smoothing: antialiased;
   }
 
   body, button, input {

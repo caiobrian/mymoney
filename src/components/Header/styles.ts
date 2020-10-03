@@ -12,6 +12,7 @@ export const Container = styled.div`
 
 export const Profile = styled.div`
   color: ${({ theme }) => theme.colors.white};
+  margin-right: 15px;
 `;
 
 export const Welcome = styled.h3``;
