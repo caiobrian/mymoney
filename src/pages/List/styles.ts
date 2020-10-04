@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div``;
 
-export const Content = styled.div``;
+export const Content = styled.main``;
 
 export const FinanceFilter = styled.div`
   width: 100%;
@@ -16,18 +16,15 @@ export const FinanceFilter = styled.div`
     background: none;
     color: ${({ theme }) => theme.colors.white};
     margin: 0 10px;
+    opacity: 0.4;
     transition: opacity 0.3s;
-
-    &:hover {
-      opacity: 0.7;
-    }
   }
   .tag-filter-recurrent::after {
     content: "";
     display: block;
     margin: 0 auto;
     width: 55px;
-    border-bottom: 10px solid ${({ theme }) => theme.colors.warning};
+    border-bottom: 10px solid ${({ theme }) => theme.colors.success};
   }
 
   .tag-filter-eventual::after {
@@ -35,6 +32,10 @@ export const FinanceFilter = styled.div`
     display: block;
     margin: 0 auto;
     width: 55px;
-    border-bottom: 10px solid ${({ theme }) => theme.colors.sucess};
+    border-bottom: 10px solid ${({ theme }) => theme.colors.warning};
+  }
+
+  .tag-actived {
+    opacity: 1;
   }
 `;
